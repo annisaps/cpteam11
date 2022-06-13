@@ -64,9 +64,7 @@
                               <span>(021) - 222 - 2324</span>
                         </li>
                   </ul>
-                  <div class="link-btn">
-                        <a href="#" class="btn-style-one">Daftar</a>
-                  </div>
+                  
             </div>
       </div>
 </section>
@@ -168,54 +166,87 @@
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="contact-area style-two">
                     <div class="section-title">
-                        <h3>Request <span>Daftar</span></h3>
+                        <h3>From Pendaftaran <span><br>Home Service</span></h3>
                     </div>
                     <form name="contact_form" class="default-form contact-form" action="sendmail.php" method="post">
                         <div class="row">
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <input type="text" name="Name" placeholder="Name" required="">
+                              <h4>Data Pemesan</h4>
+                                <br><div class="form-group">                                 
+                                  <input type="text" name="Nama" placeholder="Nama" required="isi">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="Email" placeholder="Email" required="">
+                                  <select name="subject">
+                                      <option>Jenis Kelamin</option>
+                                      <option>Laki-Laki</option>
+                                      <option>Perempuan</option>
+                                  </select>
+                              </div>
+                                <div class="form-group">
+                                    <input type="tel" name="No.WhatsApp" placeholder="No.WhatsApp" required="isi">
+                                </div>                                                            
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                              <h4><br></h4>
+                                <br><div class="form-group">
+                                    <input type="email" name="Email" placeholder="Email" required="isi">
                                 </div>
+                                <div class="form-group">
+                                  <select name="subject">
+                                      <option>Pilih Imunisasi</option>
+                                      <option>DPT</option>
+                                      <option>Hepatitis B</option>
+                                      <option>MMR</option>
+                                      <option>Polio</option>
+                                      <option>BCG</option>
+                                  </select>
+                              </div> 
                                 <div class="form-group">
                                     <select name="subject">
-                                        <option>Departments</option>
-                                        <option>DPT</option>
-                                        <option>Psychological</option>
+                                        <option>Metode Pembayaran</option>
+                                        <option>Pribadi</option>
+                                        <option>Mitra/Penjamin</option>
                                     </select>
                                 </div>                            
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <input type="text" name="Phone" placeholder="Phone" required="">
+                              <h4>Data Pasien</h4>
+                                <br><div class="form-group">                                 
+                                  <input type="text" name="Nama Pasien" placeholder="Nama Pasien" required="isi">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="Date" placeholder="Date" required="" id="datepicker">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                </div> 
+                                  <select name="subject">
+                                      <option>Jenis Kelamin</option>
+                                      <option>Laki-Laki</option>
+                                      <option>Perempuan</option>
+                                  </select>
+                              </div>
                                 <div class="form-group">
-                                    <select name="subject">
-                                        <option>Doctor</option>
-                                        <option>DPT</option>
-                                        <option>Psychological</option>
-                                    </select>
+                                    <input type="number" name="Umur" placeholder="Umur" required="isi">
                                 </div>                            
                             </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                              <h4><br></h4>
+                                <br><div class="form-group">
+                                  <input type="date" name="Tanggal Lahir" placeholder="Tanggal Lahir" required="" id="datepicker">
+                                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                              </div>
                                 <div class="form-group">
-                                    <textarea name="form_message" placeholder="Your Message" required=""></textarea>
-                                </div>
-                                <div class="form-group text-center">
-                                    <button type="submit" class="btn-style-one">submit now</button>
+                                    <input type="text" name="Alergi/Catatan" placeholder="Alergi/Catatan" required="isi">
+                                </div>                                 
+                                <div class="form-group">
+                                    <select name="subject">
+                                        <option>Sudah Imunisasi di bcare?</option>
+                                        <option>Sudah</option>
+                                        <option>Belum</option>
+                                    </select>
                                 </div>                            
                             </div>
                         </div>
                     </form>
                 </div>                      
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <div class="Daftar-image-holder">
                     <figure>
                         <img src="images/background/appoinment.jpg" alt="Daftar">
@@ -226,52 +257,48 @@
     </div>
 </section>
 <!-- End Contact Section -->
-
-<!--team section-->
-<section class="team-section section">
+<section class="blog-section section style-three pb-0">
     <div class="container">
-        <div class="section-title text-center">
-            <h3>Our Expert
-                <span>Doctors</span>
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum 
-                <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?</p>
-        </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="team-member">
-                    <img src="images/team/doctor-2.jpg" alt="doctor" class="img-responsive">
-                    <div class="contents text-center">
-                        <h4>Dr. Robert Barrethion</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-                        <a href="#" class="btn btn-main">read more</a>
-                    </div>
-                </div>
+		<div class="col-md-12 col-sm-36 col-xs-36">
+        <div class="contact-area style-two">
+				<form name="contact_form" class="default-form contact-form" action="sendmail.php" method="post">
+          <div class="row"> 
+					<div class="col-md-12 col-sm-36 col-xs-36">
+            <h4>Jadwal Kunjungan</h4>
+            <br><div class="form-group">                                 
+               <input type="text" name="Alamat Lengkap" placeholder="Alamat Lengkap" required="isi">
+           </div>
+           <div class="form-group">                                 
+               <input type="text" name="Link Google-maps (opsional)" placeholder="Link Google-maps (opsional)" required="isi">
+           </div>
+           <div class="form-group">
+               <input type="date" name="Tanggal Kunjungan" placeholder="Tanggal Kunjungan" required="" id="datepicker">
+               <i class="fa fa-calendar" aria-hidden="true"></i>
+           </div>
+           <div class="form-group">
+               <select name="timePicker">
+                   <option>Pilih Waktu Kunjungan</option>
+                   <option>08:30 - 10:00</option>
+                   <option>10:00 - 12:00</option>
+                   <option>14:00 - 15:30</option>
+                </select>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="team-member">
-                    <img src="images/team/doctor-lab-3.jpg" alt="doctor" class="img-responsive">
-                    <div class="contents text-center">
-                        <h4>Dr. Marry Lou</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-                        <a href="#" class="btn btn-main">read more</a>
-                    </div>
-                </div>
+            <div class="form-group">                                 
+                <input type="text" name="Catatan Pemesanan" placeholder="Catatan Pemesanan" required="isi">
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="team-member">
-                    <img src="images/team/event-2.jpg" alt="doctor" class="img-responsive">
-                    <div class="contents text-center">
-                        <h4>Dr. Sansa Stark</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-                        <a href="#" class="btn btn-main">read more</a>
-                    </div>
-                </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn-style-one">Daftar Sekarang</button>
+            </div>                            
+          </div>
+					</div>
+				</form>	
+				</div>                      
             </div>
-        </div>
+        </div>                    
     </div>
 </section>
-<!--End team section-->
+
 
 <!--footer-main-->
 <footer class="footer-main">
