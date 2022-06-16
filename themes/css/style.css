@@ -3528,4 +3528,36 @@ li {
   }
 }
 
+.backtop {
+  position: fixed;
+  background: #d76b73;
+  z-index: 9999;
+  display: inline-block;
+  right: 55px;
+  width: 60px;
+  height: 60px;
+  bottom: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 50px;
+}
+
+.backtop i {
+  color: #fff;
+  font-size: 14px;
+}
+
+.reveal {
+  transition: all .3s;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.icofont-long-arrow-up:before
+{
+  content: "\ea95";
+}
 /*# sourceMappingURL=maps/style.css.map */

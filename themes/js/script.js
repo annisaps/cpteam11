@@ -181,6 +181,16 @@
 		}
 	});
 
+	// SCROLL TO TOP
+  
+	$(window).on('scroll', function () {
+		if ($(window).scrollTop() > 70) {
+			$('.backtop').addClass('reveal');
+		} else {
+			$('.backtop').removeClass('reveal');
+		}
+	});
+
 /* ========================When document is loaded, do===================== */
 	$(window).on('load', function() {
 		// add your functions

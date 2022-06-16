@@ -236,3 +236,34 @@
     transition: all 500ms ease;
   }
 }
+
+//  Back To Top
+//  
+
+.backtop{
+  position: fixed;
+  background: $secondary-color;
+  z-index: 9999;
+  display: inline-block;
+  right: 55px;
+  width: 60px;
+  height:60px;
+  bottom: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 50px;
+
+  i{
+    color: $light;
+    font-size: 20px;
+  }
+}
+
+.reveal{
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 1;
+}
